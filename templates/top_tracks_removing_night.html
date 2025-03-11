@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Tracks</title>
+</head>
+<body>
+    <h1>Your Top Tracks Removing Night</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Track Name</th>
+                <th>Artist Name</th>
+                <th>Total Time Played (Minutes)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for track in result %}
+                <tr>
+                    <td>{{ track[0] }}</td>
+                    <td>{{ track[1] }}</td>
+                    <td>{{ track[2] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
